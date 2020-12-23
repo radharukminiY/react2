@@ -9,6 +9,5 @@ const Footer = () =>
 </center>
 </div>
 )
-
 }
 export default Footer;
