@@ -16,8 +16,9 @@ this.state={
 }
 
 filterNews=(userInput)=>{
-const Output=this.state.filter((data)=>{
-  return data.title.toLowerCase().indexOf(userInput.toLowerCase())>-1
+const Output=this.state.news.filter((data)=>{
+  return data.feed.toLowerCase().indexOf(userInput.toLowerCase())>-1 //gives data based on feed
+  //return data.title.toLowerCase().indexOf(userInput.toLowerCase())>-1 //gives data based on title
 })
 this.setState({filtered:Output})
 }
@@ -30,7 +31,7 @@ render(){
 <Header userText={(data)=>{this.filterNews(data)}}/>
 <News newsdata={this.state.filtered}/>
 <hr/>
-<Footer/>
+<Footer year="2021"/>
   </React.Fragment>
 )
 }

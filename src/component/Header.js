@@ -8,6 +8,7 @@ class Header extends Component {
 
     this.state={
       title:'Developer Funnel React',
+      feed:"",
       keyword:'user text here'
     }
 
