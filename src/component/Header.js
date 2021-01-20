@@ -7,13 +7,13 @@ class Header extends Component {
     super()
 
     this.state={
-      title:'Developer Funnel React',
+      title:'News-Data',
       keyword:'user text here'
     }
 
     }
 
-handleChange=(event) => {
+handleChange=(event) =>{
   console.log(event.target.value)
   this.setState({keyword:event.target.value?event.target.value:'user text here'})
   this.props.userText(event.target.value)
